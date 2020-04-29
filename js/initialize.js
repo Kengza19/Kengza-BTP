@@ -54,3 +54,23 @@ $(document).ready(function() {
     dots: false
   });
 });
+$(document).ready(function () {
+  var distance = $('.stat-con').offset().top,
+  $window = $(window);
+  $window.scroll(function () {
+    if ($window.scrollTop() >= distance)
+    {
+      $('.stat-animation').each(function () {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).data('value')
+        }, {
+          duration: 3000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+    }
+  });
+});

@@ -124,6 +124,9 @@ nav li
   font-size: 0.9rem;
   border-radius: 5px;
 }
+#banniere_accueil .slider {
+  overflow-x: hidden;
+}
 .slider h2
 {
   font-size: 3rem;
