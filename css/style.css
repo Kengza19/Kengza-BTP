@@ -1,0 +1,688 @@
+
+/**
+* This file is the principle css file of the page
+* @author: @Kengza
+*/
+
+/* Font-family import */
+
+@font-face {
+  font-family: "BeVietnam-Regular";
+  src: url("../fonts/BeVietnam-Regular.ttf");
+}
+@font-face {
+  font-family: "BeVietnam-Medium";
+  src: url("../fonts/BeVietnam-Medium.ttf");
+}
+@font-face {
+  font-family: "BeVietnam-Bold";
+  src: url("../fonts/BeVietnam-Bold.ttf");
+}
+@font-face {
+  font-family: "BeVietnam-Light";
+  src: url("../fonts/BeVietnam-Light.ttf");
+}
+@font-face {
+  font-family: "BeVietnam-SemiBold";
+  src: url("../fonts/BeVietnam-SemiBold.ttf");
+}
+@font-face {
+  font-family: "BeVietnam-ExtraBold";
+  src: url("../fonts/BeVietnam-ExtraBold.ttf");
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: "BeVietnam-Regular";
+  font-size: 16px;
+  color: hsl(226.7, 9.1%, 38.8%)
+}
+@media only screen and (max-width: 992px){
+  body {
+    font-size: 14px;
+  }
+}
+/*Page d'accueil*/
+
+/* Début barre de navigation*/
+
+.logo-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container p {
+  margin: 0;
+  
+}
+.logo-container .btn {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.logo-container .logo {
+  font-family: "BeVietnam-Bold";
+  font-size: 1.3rem;
+}
+nav
+{
+  background-color: #424242;
+  height: 7.6rem;
+  line-height: normal;
+  padding: 1.3rem 6rem;
+}
+nav li
+{
+  font-family: "BeVietnam-Medium";
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+.barre
+{
+  margin-top: 0.8rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.reduce a
+{
+  font-size: 1rem;
+  line-height: 42px;
+  border-bottom: 3px solid transparent;
+  
+}
+.reduce a:hover
+{
+  border-bottom: 3px solid #EEC400;
+}
+.divider
+{
+  background-color: #bdbdbd;
+}
+
+/*Fin barre de navigation*/
+
+/* Début Slider*/
+
+.slides
+{
+  text-transform: uppercase;
+  font-family: "BeVietnam-Medium";
+  margin-top: 5rem;
+  color: grey;
+  
+}
+.slide1 div a
+{
+  margin-top: 6rem;
+  color: #424242;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+.slider h2
+{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.slide2 div a, .slide3 div a
+{
+  margin-top: 6rem;
+  color: #424242;
+  font-weight: bold;
+}
+.slider .slides li img {
+  filter: grayscale(0.2);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #424242 !important;
+}
+
+/*Infos supplémentaires : barre sous le slider*/
+
+#supp
+{
+  background-image: url('../image/photo3.jfif');
+  height: 230px;
+  margin-top: -60px;
+}
+.pertub {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(226,192,24,0.9);
+  height: 230px;
+  padding: 1rem 6rem 0 6rem;
+}
+#supp div h5
+{
+  font-family:  "BeVietnam-Bold";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #424242;
+}
+.pertub a
+{
+  font-family:  "BeVietnam-Medium";
+  font-size: 1rem;
+}
+.pertub p
+{
+  font-style: italic;
+  color: #424242;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+/*Fin slider*/
+
+/*Début Section*/
+/*section
+{
+  margin-top: 80px;
+}*/
+.wel
+{
+  font-family: "BeVietnam-Medium";
+  font-size: 2rem;
+}
+.wel-title
+{
+  line-height: normal;
+  margin-top: 6rem;
+  font-family: "BeVietnam-Medium";
+}
+.title-desc {
+  font-family: "BeVietnam-Regular";
+  font-size: 0.9rem;
+  margin: 2rem auto;
+  width: 10cm;
+  text-align: center;
+}
+.wel-title3
+{
+  margin-top: 4rem;
+}
+
+.present
+{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem;
+}
+.present1 h5, .service h5 {
+  font-size: 1.5rem;
+  font-family: "BeVietnam-Medium";
+  color: #C8A813;
+}
+.present1
+{
+  /*border: 3px solid #EEC400;*/
+  height: auto;
+  border-radius: 5px;
+  width: 18rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.present1 p:last-child  {
+  font-size: 0.9rem;
+  width: 7cm;
+  text-align: center;
+}
+.deco-icon, .member-icon {
+  background-color: #C8A813;
+  color: #424242;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.deco-icon i {
+  font-size: 1.7rem;
+}
+.texte-bienvenue {
+  padding: 0rem 9rem;
+}
+/*Bloc présentant quelques services*/
+
+#services {
+  padding: 1rem 13rem 3rem 13rem;
+  margin-top:-6rem;
+}
+.service p  {
+  font-size: 0.8rem;
+}
+.service h5 {
+  margin-top: 2rem;
+}
+#bouton
+{
+  margin-top: 60px;
+  text-align: center;
+}
+#bouton a, .realis-a a
+{
+  color: #424242;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/*Fin services*/
+
+/*Début bloc réalisation: carousel présentant un aperçu de réalisation*/
+.galerie-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.galerie-slider{
+  display: none;
+}
+#realisation {
+  padding-bottom: 1rem;
+}
+.galerie
+{
+  height: 500px;
+  width: 600px;
+  object-fit: cover !important;
+}
+.carousel {
+  height: 500px !important;
+  object-fit: cover !important;
+}
+.carousel
+{
+  margin-top: -7rem;
+  margin-left: -20rem;
+  margin-bottom: 60px;
+}
+.realis-a
+{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+/*Petite statistique des projets réalisés et clients satisfaits*/
+
+.stat
+{
+  background-color: rgba(226,192,24,0.9);
+  height: 200px;
+  padding-top: 50px;
+}
+.stat-con
+{
+  background-image: url('../image/photo10.jfif');
+  margin-top: 4rem;
+}
+.stat h5
+{
+  font-size: 1.8em;
+  font-family: "BeVietnam-Bold";
+}
+.stat p
+{
+  font-weight: bold;
+  color: white;
+  font-size: 1.3em;
+}
+.stat-con .row {
+  margin-bottom: 0;
+} 
+
+/*Fin bloc réalisation*/
+
+/*Début présentation de quelques membres de l'équipe*/
+#equipe-complete {
+  padding-bottom: 3rem;
+  margin-top: -1rem;
+  padding-top: 1rem;
+}
+.equipe {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 9rem;
+}
+.equipe-content{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.member-line {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.member-header {
+  position: relative;
+}
+.member-header img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.member {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.member-icon {
+  position: absolute;
+  left: calc(50% - 58px/2);
+  top: 159px;
+}
+.member-icon i{
+  font-size: 1.8rem;
+}
+.member-line, .member-content {
+  margin-top: 2rem;
+}
+.member-content h5{
+  color: #C8A813;
+  font-family: "BeVietnam-Bold";
+  font-size: 1.25rem;
+}
+.member-content h5 span {
+  font-size: 0.8rem;
+  color: #424242;
+}
+.member-content p {
+  font-size: 0.8rem;
+  /* width: 15rem; */
+  font-family: "BeVietnam-Medium";
+}
+/*Fin présentation équipe*/
+
+/*Début bloc articles récents*/
+
+.articles
+{
+  padding: 2rem 13rem;
+}
+.article-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.article-container{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.article {
+  margin-top: 4rem;
+}
+.articles .card-title, .article h5, .articles a
+{
+  font-weight: bold;
+}
+.card {
+  width: 250px;
+}
+.card img{
+  height: 180px !important;
+  width: 250px !important;
+  object-fit: cover;
+}
+.adresse
+{
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.card-title {
+  font-size: 1rem !important;
+  display: block;
+  line-height: 18px;
+}
+.card-content p {
+  font-size: 0.8rem;
+}
+.articles #bouton a{
+  margin-top: 4rem;
+}
+
+/************************************ Footer */
+
+footer, .page-footer {
+  background-color: #424242;
+}
+footer {
+  padding: 2rem 9rem 0.5rem 9rem;
+}
+footer a {
+  outline: none;
+}
+.footer-container, .activiLegacy {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-container {
+  padding-bottom: 0.5rem;
+}
+.socialMedia {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.activiLegacy {
+  width: 25rem;
+}
+.activiLegacy li a {
+  color: #f5f5f5;
+  font-size: 0.9rem;
+  font-family: "BeVietnam-Regular";
+}
+.activiLegacy li {
+  padding-bottom: 0.7rem;
+}
+.activiLegacy ul{
+  margin: 0;
+}
+.activiLegacy li a:hover {
+  color: #EEC400
+}
+.socialMedia p a:hover path {
+  fill: #C8A813;
+}
+.socialMedia {
+  margin-top: 2.2rem;
+}
+.f-action {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: end;
+}
+.attribution {
+  text-align: center;
+  font-size: 13px;
+  font-family: "BeVietnam-Medium";
+  line-height: 20px;
+}
+.attribution a {
+  color: #EEC400
+}
+
+/* responsive */
+@media only screen and (max-width: 992px){
+  nav {
+    padding: 1.2rem 1rem;
+  }
+  .logo-container {
+    flex-flow: column wrap;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .logo-container .btn {
+    margin-top: 1rem;
+    padding: 0 10px;
+  }
+  .slides
+  {
+    margin-top: 5rem;
+    
+  }
+  .slide1 div a
+  {
+    margin-top: 6rem;
+    color: #424242;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+  /* .slider {
+    height: auto !important;
+  } */
+  .slider h2, .slider h3 
+  {
+    font-size: 1.8rem;
+  }
+  .slider h4 {
+    font-size: 1.5rem;
+  }
+  #supp
+  {
+    background-image: url('../image/photo3.jfif');
+    height: 280px;
+    margin-top: -60px;
+  }
+  .pertub {
+    
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(226,192,24,0.9);
+    height: 280px;
+    padding: 1rem;
+  }
+  #supp div h5
+  {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    
+  }
+  .pertub a
+  {
+    font-size: 0.7rem;
+  }
+  .pertub p
+  {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .texte-bienvenue {
+    padding: 0rem 2rem;
+  }
+  .wel-title .intro{
+    font-size: 0.8rem;
+  }
+  .wel-title .wel {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .title-desc {
+    font-size: 0.8rem;
+    width: auto;
+  }
+  .present {
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 0rem;
+  }
+  .present1 {
+    margin-bottom: 2rem;
+  }
+  #services {
+    padding: 1rem 2rem 3rem 2rem;
+  }
+  #realisation .wel-title,  #equipe-complete .wel-title {
+    padding: 0 2rem;
+  }
+  .member-line {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .member {
+    margin-bottom: 2rem;
+  }
+  .articles {
+    padding: 1rem;
+  }
+  .footer-container {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    padding: 2rem;
+    text-align: center;
+  }
+  .activiLegacy {
+    width: auto;
+    margin-bottom: 2rem;
+  }
+  .f-infos, .activiLegacy {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialMedia {
+    margin: 0rem;
+    width: 16rem;
+  }
+  .f-action {
+    justify-content: center;
+    align-items: center;
+  }
+  .attribution {
+    display: block;
+    text-align: center;
+  }
+  .galerie-container {
+    display: none;
+  }
+  .galerie-slider {
+    display: block;
+    height: auto !important;
+  }
+  .slick-slide img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .article-content {
+    flex-flow: column wrap;
+  }
+  .articles #bouton {
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+}
