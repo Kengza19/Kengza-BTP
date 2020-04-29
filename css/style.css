@@ -36,7 +36,8 @@ body
   padding: 0;
   font-family: "BeVietnam-Regular";
   font-size: 16px;
-  color: hsl(226.7, 9.1%, 38.8%)
+  color: hsl(226.7, 9.1%, 38.8%);
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 992px){
   body {
@@ -258,6 +259,16 @@ nav li
 #services {
   padding: 1rem 13rem 3rem 13rem;
   margin-top:-6rem;
+}
+.service {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-item {
+  width: 15rem;
+  padding: 2rem;
 }
 .service p  {
   font-size: 0.8rem;
@@ -536,7 +547,7 @@ footer a {
   .nav-wrapper {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
   }
   .logo-container .btn {
@@ -656,7 +667,7 @@ footer a {
     align-items: center;
   }
   .socialMedia {
-    margin: 0rem;
+    margin: 0rem 0rem 3rem 0rem;
     width: 16rem;
   }
   .f-action {
@@ -684,5 +695,33 @@ footer a {
   .articles #bouton {
     margin-bottom: 2rem;
     margin-top: 0;
+  }
+  /* .service {
+    flex-flow: column wrap;
+  } */
+}
+@media only screen and (max-width: 600px){
+  .service {
+    justify-content: center;
+  }
+  .service-item {
+    width: 20rem;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px){
+  nav {
+    padding: 1.2rem 3rem;
+  }
+  .service-item {
+    width: auto;
+  }
+  #services {
+    padding: 1rem 4rem 3rem 4rem;
+  }
+  footer {
+    padding: 4rem;
+  }
+  .articles {
+    padding: 3rem;
   }
 }
